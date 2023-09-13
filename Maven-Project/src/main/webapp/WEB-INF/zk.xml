@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<!-- Input -->
+	<!-- 9.6.3-Eval -->
+
+	<listener>
+		<listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>
+	</listener>
+
+	<library-property>
+		<name>org.zkoss.theme.preferred</name>
+		<value>iceblue_c</value>
+	</library-property>
+</zk>

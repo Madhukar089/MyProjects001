@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="Congratulations Page" contentType="text/html;charset=UTF-8"?>
+<zk>
+    <window style="background-color: black;" border="normal" width="400px" contentStyle="overflow:auto" mode="overlapped" position="center,center">
+    <caption style="color: white">Guess The Number...Redirecting you to the home page</caption>
+        <vbox align="center" spacing="10px">
+            <label value="You won my dear Love" style="font-size: 24px; font-weight: bold; color: green;" />
+        </vbox>
+
+        <div id="loading-spinner" class="custom-spinner"></div>
+
+        <style>
+            /* Define the CSS for the custom spinner */
+            .custom-spinner {
+                width: 30px;
+                height: 30px;
+                border: 4px solid rgba(0, 0, 0, 0.1);
+                border-top: 4px solid #007bff; /* Set the spinner color */
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+                position: absolute;
+                top: 8%;
+                left: 75%;
+                transform: translate(-50%, -50%);
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    </window>
+    <script type="text/javascript">
+            <![CDATA[
+                // Delay the redirection by 5 seconds (5000 milliseconds)
+                setTimeout(function() {
+                    // Redirect the user to another page
+                    window.location.href = 'open.zul'; // Replace with your desired URL
+                }, 5000); // 5000 milliseconds (5 seconds)
+            ]]>
+        </script>
+</zk>

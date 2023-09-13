@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <window style="background-color: black;" border="normal" width="500px" height="350px" contentStyle="overflow:auto" mode="overlapped" position="center,center" apply="demo.getting_started.input.EditController">
+    <caption style="color: white">Guess The Number</caption>
+        <borderlayout>
+            <center>
+                <div style="overflow-y: auto; height: 100%; width: 100%;">
+		            <vbox id="output" vflex="1">
+		            	
+		            </vbox>
+		        </div>
+            </center>
+            <south size="50px">
+			    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+			        <intbox id="input" width="30%" placeholder="Guess..." />
+			        <button id="sendMessage" label="Review"/>
+			    </div>
+			</south>
+        </borderlayout>
+    </window>
+</zk>

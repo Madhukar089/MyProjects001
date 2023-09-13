@@ -1,0 +1,10 @@
+<window apply="demo.getting_started.input.EditController">
+	<div>
+		Input: <textbox id="input" />
+	</div>
+	<div>
+		Output: <label id="output" />
+	</div>
+	<button id="ok" label="Submit" />
+	<button id="cancel" label="Clear" />
+</window>
